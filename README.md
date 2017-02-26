@@ -1,5 +1,16 @@
-To build and run osmo-nitb on LimeSDR
-Semi-working edition
+## To build and run osmo-nitb on LimeSDR
+### *Semi-working edition*
+#### [Help wanted](https://github.com/emilf/LimeSDR-GSM-Dockerized/issues/new)
+
+To build and run the container, just execute `./startContainer` and clean up with `./killContainers`
+Nb. Assuming you are not using docker for anything else! Please don't use **killContainers** unless you are willing to lose all containers on the box. It does not clean up images, so keep that in mind.
+
+* Why docker?
+ * Well, I run Arch Linux and all guides assume Ubuntu, so either I could find all the correct libraries of the correct versions and somehow make that all work (and I did try, though not for long) or I could just run it in a container, thus making it much easier.
+* Does it work?
+  * Well, no. And it doesn't start the processes within the container automatically either, but starting it all manually does bring it up and a scan shows a network with the correct MCC-MNC. I can however not connect to that network.
+* So what's wrong with it?
+ * Being rather new to all of this, I don't know and I don't know how to find out. However, I suspect the configs are a bit off for LimeSDR, since those were copied from instructions intended for another type of BTS hardware. Any help is appreciated.
 
 pysim is included, even if only marginally related, as I needed a specific older revision of it for it to work with my sysmocom USIMs, so I like having it around.
 

@@ -19,6 +19,8 @@ pysim is included, even if only marginally related, as I needed a specific older
 * Actually make it work
 * Refactor Dockerfile and scripts to make sense, rather than just being appended to. Appending to it is fine work WIP, so you don't have to redo all the previous dockerfile steps, but is very messy in the long run.
 * Make travis actually do rudimentary tests on the container it builds.
+* Split scripts up into different steps for properly splitting up steps in Travis
+* Add the processes to supervisord.conf, for making 'em start automatically
 
 References:
 https://wiki.myriadrf.org/Osmocom_GSM

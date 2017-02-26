@@ -1,4 +1,5 @@
 The pysim directory is covered by its own license. See pysim/COPYING
+
 The rest of this repository is under the following license:
 
 This is free and unencumbered software released into the public domain.

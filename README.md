@@ -1,6 +1,7 @@
 ## To build and run osmo-nitb on LimeSDR
 ### *Semi-working edition*
 #### [Help wanted](https://github.com/emilf/LimeSDR-GSM-Dockerized/issues/new)
+[![Build Status](https://travis-ci.org/emilf/LimeSDR-GSM-Dockerized.svg?branch=master)](https://travis-ci.org/emilf/LimeSDR-GSM-Dockerized)
 
 To build and run the container, just execute `./startContainer` and clean up with `./killContainers`
 Nb. Assuming you are not using docker for anything else! Please don't use **killContainers** unless you are willing to lose all containers on the box. It does not clean up images, so keep that in mind.
@@ -13,6 +14,11 @@ Nb. Assuming you are not using docker for anything else! Please don't use **kill
  * Being rather new to all of this, I don't know and I don't know how to find out. However, I suspect the configs are a bit off for LimeSDR, since those were copied from instructions intended for another type of BTS hardware. Any help is appreciated.
 
 pysim is included, even if only marginally related, as I needed a specific older revision of it for it to work with my sysmocom USIMs, so I like having it around.
+
+#### TODO
+* Actually make it work
+* Refactor Dockerfile and scripts to make sense, rather than just being appended to. Appending to it is fine work WIP, so you don't have to redo all the previous dockerfile steps, but is very messy in the long run.
+* Make travis actually do rudimentary tests on the container it builds.
 
 References:
 https://wiki.myriadrf.org/Osmocom_GSM

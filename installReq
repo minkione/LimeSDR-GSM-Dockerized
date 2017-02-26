@@ -1,0 +1,15 @@
+#!/bin/bash
+cd /work
+
+# OpenBSC, OsmoBTS & dependencies
+apt-get -y install apt-utils
+apt-get -y install software-properties-common python-software-properties
+apt-add-repository ppa:george-edison55/cmake-3.x
+apt-add-repository ppa:myriadrf/drivers
+add-apt-repository ppa:ettusresearch/uhd
+
+apt-get update
+
+apt-get -y dist-upgrade
+apt-get -y install build-essential git cmake python-mako libsqlite3-dev libboost-all-dev libmnl-dev libssl-dev libpcap-dev libi2c-dev libusb-1.0-0-dev libsoapysdr-dev autoconf libtool libpcsclite-dev libortp-dev libdbi-dev libdbd-sqlite3 uhd-host libuhd-dev uhd-soapysdr
+

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+docker build -t=gsm .
+docker run -p 22 -t -d --privileged -v `pwd`/cfg:/cfg -v /dev/bus/usb:/dev/bus/usb gsm
+
+docker ps

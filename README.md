@@ -5,6 +5,7 @@
 
 To build and run the container, just execute `./startContainer` and clean up with `./killContainers`
 Nb. Assuming you are not using docker for anything else! Please don't use **killContainers** unless you are willing to lose all containers on the box. It does not clean up images, so keep that in mind.
+Also, though this is containerized, the container has full access to all USB devices and no attempt has been made to secure any of this.
 
 * Why docker?
  * Well, I run Arch Linux and all guides assume Ubuntu, so either I could find all the correct libraries of the correct versions and somehow make that all work (and I did try, though not for long) or I could just run it in a container, thus making it much easier.
